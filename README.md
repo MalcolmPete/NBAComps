@@ -2,11 +2,15 @@
 
 Finds NBA players with similar playing styles using per-36 stats.
 
-Early in development. Currently loads and normalizes 2025-26 player stats; similarity search and a Streamlit app are next.
+**Live app:** https://nbacomps.streamlit.app/
 
-Built with Python, pandas, PyTorch and nba_api.
+Each player is described by 12 per-36 stats (scoring, shot profile, rebounding, playmaking, defense and shooting), normalized and compared with cosine similarity.
+
+Still in development. Next up is a PyTorch autoencoder to learn player embeddings and compare them against the raw-stat comps.
+
+Built with Python, pandas, PyTorch, Streamlit and nba_api.
 
 ## Run
 
-    pip install nba_api pandas torch
-    python main.py
+    pip install -r requirements.txt
+    streamlit run app.py
