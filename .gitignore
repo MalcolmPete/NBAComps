@@ -3,3 +3,4 @@ venv/
 __pycache__/
 .idea/
 *.csv
+!players_2025-26.csv
